@@ -1,0 +1,317 @@
+body {
+    background-image: url(Image/Arlecchino-min.jpeg);
+    background-size: cover;
+    background-position: 54%;
+}
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+}
+
+.indiv {
+    margin: 10px;
+    text-align: center;
+    background-color: gainsboro;
+}
+
+video {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+
+article {
+    width: clamp(200px, 50%, 600px);
+}
+
+table,
+tr,
+th,
+td {
+    border: 2px solid;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: darkgray;
+}
+
+tr:hover td {
+    background-color: powderblue;
+}
+
+h4,
+p {
+    text-align: center;
+    padding: 5px;
+}
+
+.image {
+    max-width: 100%;
+    max-height: 350px;
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: 2vw;
+        margin: 2px;
+    }
+}
+
+.main-header {
+    background-color: whitesmoke;
+    padding-left: 10px;
+    /* padding-top: 3px;
+    padding-bottom: 3px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    padding: 0px;
+    margin: 14px;
+    position: absolute;
+    left: 0px;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+footer {
+    background-image: radial-gradient(lightblue, beige 100%);
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.left-footer {
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.info-left {
+    color: rgb(219, 84, 75);
+    text-align: left;
+    width: 100%;
+}
+
+.info-right {
+    color: rgb(219, 84, 75);
+    text-align: right;
+    width: 100%;
+}
+
+.info-center {
+    color: rgb(219, 84, 75);
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgb(146, 168, 133);
+}
+
+nav {
+    position: absolute;
+    right: 0;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(219, 84, 75);
+    padding: 15px;
+    float: left;
+}
+
+a:hover {
+    background-color: burlywood;
+    transition: all 0.2s ease;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab {
+    background-color: rgba(240, 240, 240, 0.918);
+    width: 190px;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+h1.name {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    color: black;
+}
+
+h2.price {
+    font-size: 38px;
+    color: black;
+}
+
+.list {
+    list-style-type: disc;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.list li {
+    margin-top: 20px;
+    color: black;
+}
+
+hr {
+    height: 7px;
+    width: 80%;
+    margin: auto;
+    background-color: rgb(219, 84, 75);
+    border: none;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border-radius: 9px;
+    color: black;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: none;
+    font-size: 15pt;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.747);
+}
+
+div.about {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+    width: 80%;
+}
+
+.about {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    width: 88%;
+}
+
+div.image-about {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+img.about-us {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color: antiquewhite;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(97, 95, 95);
+    cursor: pointer;
+}
+
+a.dropdown-item {
+    min-width: 160px;
+    text-align: left;
+}
+
+li.dropdown-item:hover a.dropdown-item {
+    text-align: left;
+    color: gainsboro;
+}
+
+body {
+    margin-top: 7%;
+}
+
+.dancing {
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+}
+
+.sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 500;
+}
+
+.winky {
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 500;
+}
+
+.exo {
+    font-family: "Exo", sans-serif;
+}
